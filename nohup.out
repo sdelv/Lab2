@@ -1,0 +1,96 @@
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+[0mGET / [36m304 [0m10.854 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.487 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.760 ms - -[0m
+[0mGET / [36m304 [0m1.501 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.800 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.681 ms - -[0m
+[0mGET / [36m304 [0m1.205 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.450 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.938 ms - -[0m
+[0mGET / [36m304 [0m0.952 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.559 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.641 ms - -[0m
+[0mGET /blog [36m304 [0m1.851 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.613 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.606 ms - -[0m
+[0mGET /blog [36m304 [0m1.334 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.574 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.650 ms - -[0m
+[0mGET /blog/add [32m200 [0m1.884 ms - 752[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.741 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.790 ms - -[0m
+[0mGET /blog [36m304 [0m1.812 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.608 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.754 ms - -[0m
+[0mGET / [36m304 [0m1.102 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.438 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.254 ms - -[0m
+[0mGET / [36m304 [0m0.965 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.744 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.374 ms - -[0m
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+Port 80 is already in use
+[0mGET / [32m200 [0m1.150 ms - 812[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.936 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.362 ms - -[0m
+[0mGET /blog [36m304 [0m0.852 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.388 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.453 ms - -[0m
+[0mGET /blog/add [36m304 [0m1.403 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.683 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.513 ms - -[0m
+[0mGET /blog [36m304 [0m0.792 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.638 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.513 ms - -[0m
+[0mGET / [36m304 [0m1.290 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.665 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.436 ms - -[0m
+[0mGET / [36m304 [0m0.823 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.575 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.478 ms - -[0m
+[0mGET / [36m304 [0m1.087 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.425 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.518 ms - -[0m
+[0mGET / [36m304 [0m1.201 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.509 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.070 ms - -[0m
+[0mGET / [36m304 [0m0.904 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.538 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.580 ms - -[0m
+[0mGET / [36m304 [0m3.184 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.720 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.775 ms - -[0m
+[0mGET / [36m304 [0m0.900 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.721 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.908 ms - -[0m
+[0mGET / [36m304 [0m0.813 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.167 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.862 ms - -[0m
+[0mGET / [36m304 [0m1.035 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.782 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.445 ms - -[0m
+[0mGET / [36m304 [0m1.088 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.686 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.129 ms - -[0m
+[0mGET / [36m304 [0m0.815 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.568 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.450 ms - -[0m
+[0mGET / [36m304 [0m0.942 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.725 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.836 ms - -[0m
+[0mGET / [36m304 [0m0.793 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.278 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.757 ms - -[0m
+[0mGET / [36m304 [0m0.782 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.662 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.787 ms - -[0m
+[0mGET / [36m304 [0m0.756 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.361 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.185 ms - -[0m
