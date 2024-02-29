@@ -3,10 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-require('./app_server/models/db');
+require('./app_api/models/db');
 
 var routes = require('./app_server/routes/index');
-var users = require('./app_server/routes/users');
+var routesApi = require('./app_api/routes/index');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/bootstrap-icons', express.static(path.join(__dirname, 'node_modules/bootstrap-icons')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/api', routesApi);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -3,10 +3,11 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-  </head>
-  <body>
-	  <div class="container">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <div class="container">
        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-danger">
     <a class="navbar-brand" href="/">My Blog</a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -16,7 +17,21 @@
         </div>
     </div>
 </nav>
-    <h3><%= title %></h3>
-    <p>This blog feature is under construction.</p>
+      <p></p>
+      <div class="card border-dark" style="width: 50%">
+        <form action="/blogdeletion/<%=blog._id%>" method="post" style="padding: 20px; font-size: 18px">
+          <div class="form-group">
+            <label for="summary" class="text-dark">Blog Title</label>
+            <input readonly class="form-control" id="blogTitle" name="blogTitle" value="<%=blog.blogTitle%>">
+            <p></p>
+            <label for="text" class="text-dark">Blog Text</label>
+            <textarea readonly class="form-control" id="blogEntry" rows="3" name="blogEntry"><%=blog.blogEntry%></textarea>
+            <p></p>
+          </div>
+          <input type="submit" class="btn btn-danger float-right" value="Delete Blog">
+          <a class="btn btn-dark float-right" style="margin-right: 25px" href="/blogList" role="button">Cancel</a>
+        </form>
+      </div>
+      </div>
   </body>
-</html>  
+</html>

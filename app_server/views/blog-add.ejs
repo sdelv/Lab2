@@ -3,10 +3,11 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-	  <div class="container">
+     <div class="container">
        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-danger">
     <a class="navbar-brand" href="/">My Blog</a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -16,8 +17,18 @@
         </div>
     </div>
 </nav>
-    <h3><%= title %></h3>
-    <p>This blog feature is under construction.</p>
+    <div class="card" style="width: 50%">
+      <form action="/blogAdd" method="post">
+        <div class="form-group">
+          <label for="blogTitle" class="text-dark">Title</label>
+          <input class="form-control" id="blogTitle" name="blogTitle" required>
+
+          <label for="blogEntry" class="text-dark">Entry</label>
+          <textarea class="form-control" id="blogEntry" rows="3" name="blogEntry" required></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary bg-dark border-dark" value="Add Blog">
+      </form>
+    </div>
   </body>
-</html>                    
+</html>                   
           
