@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'/>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="mb-3"><% include ./partials/nav %></div>
+    <p>
+      <% blogs.forEach(function(blog) { %>
+        <div class="card border-dark" style="width: 50%">
+          <div class="card-header">
+            <div class="row">
+            </div>
+          </div>
+          <div class="card-header">
+            <h5 class="pt-3"><%= blog.createdOn %></h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= blog.blogTitle %></h5>
+            <p class="card-text"><%= blog.blogEntry %></p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-sm">
+                <ul class="nav justify-content-end nav-pills card-header-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blogedit/<%= blog._id %>">
+                      <i class="fas fa-edit text-dark"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blogdeletion/<%= blog._id %>">
+                      <i class="fas fa-trash-alt text-dark"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p></p>
+      <% }); %>
+  </p>
+  </body>
+</html>
