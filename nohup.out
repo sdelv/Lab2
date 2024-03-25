@@ -1,0 +1,87 @@
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+Port 8080 is already in use
+npm notice 
+npm notice New minor version of npm available! 10.2.3 -> 10.5.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.0>
+npm notice Run `npm install -g npm@10.5.0` to update!
+npm notice 
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+Mongoose connected to mongodb://blogs:blogs@localhost:27017/blogs
+[0mGET / [36m304 [0m6.523 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.878 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.179 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.233 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.153 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [36m304 [0m2.934 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.734 ms - -[0m
+[0mGET /pages/home.html [36m304 [0m0.549 ms - -[0m
+[0mGET /pages/blogList.html [36m304 [0m1.054 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f79892fed0e4ca844afdfb'),
+    blogTitle: 'Test!',
+    blogEntry: 'Other test\n',
+    createdOn: 2024-03-18T01:27:46.889Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f86410fed0e4ca844afe1f'),
+    blogTitle: 'Test by Prof',
+    blogEntry: 'Hello there!',
+    createdOn: 2024-03-18T15:56:00.886Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66006f8a92b4fec0dc88392a'),
+    blogTitle: 'Test',
+    blogEntry: 'angular test',
+    createdOn: 2024-03-24T18:23:06.542Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('660093d5943ac8ab173564ce'),
+    blogTitle: 'Test',
+    blogEntry: 'another test',
+    createdOn: 2024-03-24T20:57:57.664Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m14.999 ms - -[0m
+[0mGET /pages/blogAdd.html [36m304 [0m0.745 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f79892fed0e4ca844afdfb'),
+    blogTitle: 'Test!',
+    blogEntry: 'Other test\n',
+    createdOn: 2024-03-18T01:27:46.889Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f86410fed0e4ca844afe1f'),
+    blogTitle: 'Test by Prof',
+    blogEntry: 'Hello there!',
+    createdOn: 2024-03-18T15:56:00.886Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66006f8a92b4fec0dc88392a'),
+    blogTitle: 'Test',
+    blogEntry: 'angular test',
+    createdOn: 2024-03-24T18:23:06.542Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('660093d5943ac8ab173564ce'),
+    blogTitle: 'Test',
+    blogEntry: 'another test',
+    createdOn: 2024-03-24T20:57:57.664Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m8.340 ms - -[0m
