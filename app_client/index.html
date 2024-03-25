@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="bloggerApp" class="ng-scope">
+    <head>
+        <base href="/">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'/>
+        <script src="/lib/angular.min.js"></script>
+        <script src="/lib/angular-route.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-danger">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">My Blog</a>
+                <a class="nav-item nav-link active" href="/bloglist">List Blogs</a>
+                <a class="nav-item nav-link active" href="/blogadd">Add Blog</a>
+                </div>
+            </div>
+        </nav>
+        <div ng-view></div>
+        <script src="/js/bloggerApp.js"></script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<title>{{ ab.pageHeader.title }}</title>
+<body ng-controller="AddBlogController as ab">
+  <div class="card mt-4" style="width: 50%">
+      <form name="userForm" ng-submit="ab.submit()">
+          <div class="form-group">
+              <label for="blogTitle" class="text-dark">Title</label>
+              <input class="form-control" id="blogTitle" name="blogTitle" ng-model="ab.blogTitle" required>
+
+              <label for="blogEntry" class="text-dark">Entry</label>
+              <textarea class="form-control" id="blogEntry" rows="3" name="blogEntry" ng-model="ab.blogEntry" required></textarea>
+          </div>
+          <input type="submit" class="btn btn-primary bg-dark border-dark" value="Add Blog">
+      </form>
+  </div>
+</body>

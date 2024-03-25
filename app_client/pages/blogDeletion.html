@@ -1,0 +1,20 @@
+<title>{{ bd.pageHeader.title }}</title>
+<body ng-controller="BlogDeletionController as bd">
+    <div class="container">
+      <p></p>
+      <div class="card border-dark" style="width: 50%">
+        <form name="userForm" ng-submit="bd.submit()" style="padding: 20px; font-size: 18px">
+          <div class="form-group">
+            <label for="summary" class="text-dark">Blog Title</label>
+            <input readonly class="form-control" id="blogTitle" name="blogTitle" value="{{ bd.blog.blogTitle }}">
+            <p></p>
+            <label for="text" class="text-dark">Blog Text</label>
+            <textarea readonly class="form-control" id="blogEntry" rows="3" name="blogEntry">{{ bd.blog.blogEntry }}</textarea>
+            <p></p>
+          </div>
+          <input type="submit" class="btn btn-danger float-right" value="Delete Blog">
+          <a class="btn btn-dark float-right" style="margin-right: 25px" href="/bloglist" role="button">Cancel</a>
+        </form>
+      </div>
+      </div>
+</body>
