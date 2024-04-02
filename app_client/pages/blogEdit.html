@@ -1,0 +1,22 @@
+<title>{{ eb.pageHeader.title }}</title>
+<body ng-controller="BlogEditController as eb">
+  <div class="container d-flex justify-content-center mt-5">
+    <p></p>
+    <div class="card border-dark" style="width: 50%;">
+      <form name="userForm" ng-submit="eb.submit()" style="padding: 20px; font-size: 18px">
+        <div class="form-group">
+          <label for="summary" class="text-white">Blog Title</label>
+          <input class="form-control" id="blogTitle" name="blogTitle" value="{{ eb.blog.blogTitle }}">
+          <p></p>
+          <label for="text" class="text-white">Blog Text</label>
+          <textarea class="form-control" id="blogEntry" rows="3" name="blogEntry">{{ eb.blog.blogEntry }}</textarea>
+          <p></p>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-dark float-right" style="margin-right: 10px;" href="/bloglist" role="button">Cancel</a>
+          <input type="submit" class="btn btn-secondary float-right" value="Update Blog">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

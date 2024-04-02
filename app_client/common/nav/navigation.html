@@ -1,0 +1,13 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-danger">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav flex-grow-1">
+            <a class="nav-item nav-link active" href="/">My Blog</a>
+            <a class="nav-item nav-link active" href="/bloglist">List Blogs</a>
+            <a ng-show="nc.isLoggedIn()" class="nav-item nav-link active" href="/blogadd">Add Blog</a>
+        </div>
+        <div class="navbar-nav">
+            <a ng-show="!nc.isLoggedIn()" style="margin-right: 10px;" class="nav-item nav-link active ml-5" href="/signin">Sign In or Join</a>
+            <a ng-show="nc.isLoggedIn()" style="margin-right: 10px;" class="nav-item nav-link active" href="" ng-click="nc.logout()">Logout<small> ({{ nc.currentUser().email }})</small></a>
+        </div>
+    </div>
+</nav>
