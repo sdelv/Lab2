@@ -1,0 +1,42 @@
+<title>{{ bl.pageHeader.title }}</title>
+<body>
+    <p>
+    <div class="d-flex justify-content-center mt-5" ng-repeat="blog in bl.blogs">
+        <div class="card" style="width: 50%;">
+            <div class="card-header">
+                <div class="row">
+                </div>
+            </div>
+            <div class="card-header border-white">
+                <h5 class="pt-3 title">Title: {{ blog.blogTitle }}</h5>
+            </div>
+            <div class="card-body border-white">
+                <h5 class="card-title"></h5>
+                <p class="card-text">{{ blog.blogEntry }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm d-flex justify-content-left">
+                        <small class="mt-2">Authored by: {{ blog.blogAuthor }} on {{ blog.createdOn | date:'MM/dd/yyyy'}}</small>
+                    </div>
+                    <div class="col-sm">
+                        <ul ng-show="bl.isLoggedIn() && bl.isAuthor(blog.authorEmail)" class="nav justify-content-end nav-pills card-header-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/blogedit/{{blog._id}}">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/blogdeletion/{{blog._id}}">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </div>
+    </p>
+</body>
