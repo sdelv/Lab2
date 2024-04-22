@@ -1,7 +1,5 @@
 var mongoose = require( 'mongoose' );
 var gracefulShutdown;
-var dbPassword = 'mongoBlogs$$!!';
-var encodedPassword = encodeURIComponent(dbPassword);
 var dbURI = `mongodb://blogs:blogs@localhost:27017/blogs`;
 mongoose.connect(dbURI);
 
