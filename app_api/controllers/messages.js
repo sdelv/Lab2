@@ -26,8 +26,8 @@ module.exports.createNewMessage = function (req, res) {
     console.log(req.body);
     message
         .create({
-            messageEntry: req.body.blogEntry,
-            messageAuthor: req.body.blogAuthor,
+            messageEntry: req.body.MessageEntry,
+            messageAuthor: req.body.messageAuthor,
             authorEmail: req.body.authorEmail
         })
         .then(message => {
@@ -44,9 +44,9 @@ var buildMessageList = function (req, res, results) {
     var messages = [];
     results.forEach(function (obj) {
         messages.push({
-            messageEntry: obj.blogEntry,
+            messageEntry: obj.messageEntry,
             createdOn: obj.createdOn,
-            messageAuthor: obj.blogAuthor,
+            messageAuthor: obj.messageAuthor,
             authorEmail: obj.authorEmail,
             _id: obj._id
         });
