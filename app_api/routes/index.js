@@ -8,12 +8,15 @@ var auth = jwt({
 
 var ctrlBlogs = require('../controllers/blogs');
 var ctrlAuth = require('../controllers/authentication');
+var ctrlMessages = require('../controllers/messages');i
 
 router.get('/blogs', ctrlBlogs.listAllBlogs);
 router.post('/blogs', auth, ctrlBlogs.createNewBlog);
 router.get('/blogs/:blogid', ctrlBlogs.getSingleBlog);
 router.put('/blogs/:blogid', auth, ctrlBlogs.updateSingleBlog);
 router.delete('/blogs/:blogid', auth, ctrlBlogs.deleteSingleBlog);
+router.get('/messages', auth, ctrlMessages.listAllMessages);
+router.post('/messages', auth, ctrlMessages.createNewMessage);
 
 router.post('/register', ctrlAuth.register);
 router.post('/login', ctrlAuth.login);

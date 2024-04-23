@@ -39,6 +39,11 @@ app.config(function($routeProvider, $locationProvider){
             controller: 'SignInController',
             controllerAs: 'si'
         })
+	.when('/messageboard', {
+		templateUrl: 'pages/messageboard.html',
+		controller: 'MessageBoardController',
+		controllerAs: 'mb'
+	})	
         .otherwise({redirectTo: '/'});
 });
 
@@ -85,6 +90,25 @@ function postBlog($http, authentication, data) {
 
 function deleteBlog($http, authentication, id) {
     return $http.delete('/api/blogs/' + id, {headers : { Authorization: 'Bearer ' + authentication.getToken()}})
+        .then(function(response) {
+            return response.data;
+        })
+        .catch(function(error) {
+            throw error;
+        });
+}
+
+function postMessage($http, authentication, data) {
+    return $http.post('/api/messages', data, {headers : { Authorization: 'Bearer ' + authentication.getToken()}})
+        .then(function(response) {
+            return response.data;
+        })
+        .catch(function(error) {
+            throw error;
+        });
+}
+function getAllMessages($http) {
+    return $http.get('/api/messages')
         .then(function(response) {
             return response.data;
         })
@@ -224,4 +248,28 @@ app.controller('BlogDeletionController', ['$scope', '$http', '$routeParams', '$l
                 throw error;
             });
     }
+}]);
+
+app.controller('MessageBoardController', ['$scope','$http', 'authentication', function($scope, $http, authentication) {
+    var mb = this;
+
+    mb.pageHeader = {
+        title: 'Message Board'
+    };
+
+    mb.isLoggedIn = function() {
+        return authentication.isLoggedIn();
+    }
+
+    getAllMessages($http)
+        .then(function(data) {
+            mb.blogs = data;
+            mb.isAuthor = function(authorEmail) {
+                return authentication.currentUser().email === authorEmail
+            };
+            console.log('Message Board Found');
+        })
+        .catch(function(error) {
+            console.error('Could not get message board!');
+        });
 }]);

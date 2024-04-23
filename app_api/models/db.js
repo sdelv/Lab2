@@ -1,10 +1,9 @@
 var mongoose = require( 'mongoose' );
 var gracefulShutdown;
-var dbPassword = 'mongoBlogs$$!!';
-var encodedPassword = encodeURIComponent(dbPassword);
 var dbURI = `mongodb://blogs:blogs@localhost:27017/blogs`;
+var dbURII = `mongodb://messages:messages@localhost:27017/messages`;
 mongoose.connect(dbURI);
-
+mongoose.connect(dbURII);
 
 // Monitor and report when database is connected                      
 mongoose.connection.on('connected', function () {
